@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenCSharp", "Grundla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchleifenÜbungenA1", "SchleifenÜbungenA1\SchleifenÜbungenA1.csproj", "{738B23A0-9121-41DC-8959-4309CD8FAB75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchleifenÜbungenA2", "SchleifenÜbungenA2\SchleifenÜbungenA2.csproj", "{5630B435-F48E-4DEE-9E6F-A939D96E51B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{738B23A0-9121-41DC-8959-4309CD8FAB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{738B23A0-9121-41DC-8959-4309CD8FAB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{738B23A0-9121-41DC-8959-4309CD8FAB75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5630B435-F48E-4DEE-9E6F-A939D96E51B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5630B435-F48E-4DEE-9E6F-A939D96E51B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5630B435-F48E-4DEE-9E6F-A939D96E51B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5630B435-F48E-4DEE-9E6F-A939D96E51B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
