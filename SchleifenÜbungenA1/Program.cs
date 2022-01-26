@@ -9,6 +9,7 @@ namespace SchleifenÜbungenA1
             for(int i = 50; i>=0;i--)
             {
                 Thread.Sleep(1000);
+                Console.Clear();
                 Console.WriteLine(i);
             }
 
