@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchleifenÜbungenA1", "Schl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchleifenÜbungenA2", "SchleifenÜbungenA2\SchleifenÜbungenA2.csproj", "{5630B435-F48E-4DEE-9E6F-A939D96E51B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchleifenÜbung3", "SchleifenÜbung3\SchleifenÜbung3.csproj", "{2064EF68-D5AB-47C6-820F-E96B9AB8154C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchleifenÜbung3", "SchleifenÜbung3\SchleifenÜbung3.csproj", "{2064EF68-D5AB-47C6-820F-E96B9AB8154C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchleifenÜbungenA4", "SchleifenÜbungenA4\SchleifenÜbungenA4.csproj", "{3B2CA830-5067-4A6E-93A6-0943676C8948}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2064EF68-D5AB-47C6-820F-E96B9AB8154C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2064EF68-D5AB-47C6-820F-E96B9AB8154C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2064EF68-D5AB-47C6-820F-E96B9AB8154C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B2CA830-5067-4A6E-93A6-0943676C8948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2CA830-5067-4A6E-93A6-0943676C8948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2CA830-5067-4A6E-93A6-0943676C8948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2CA830-5067-4A6E-93A6-0943676C8948}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
