@@ -13,20 +13,24 @@ namespace SchleifenÜbungA5
             Console.WriteLine("Wählen Sie eine Positive Zahl(1) oder eine negative Zahl(2)");
             Console.ReadLine();
 
-            
-            
 
-            if (auswahl == 1) 
-            for (int i = 0; i >= 0; i++) 
+
+
+            if (auswahl == 1)
             {
-                    Console.Write(i);    
+                for (int i = 0; i >= 0; i++)
+                {
+                    Console.Write(i);
+                }
             }
 
-            if(auswahl==2)
-            for(int i = 0; i<=0; i--)
+            if (auswahl == 2)
+            {
+                for (int i = 0; i <= 0; i--)
                 {
-                    Console.Write(i); 
+                    Console.Write(i);
                 }
+            }
         }
     }
 }
