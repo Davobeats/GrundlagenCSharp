@@ -6,29 +6,27 @@ namespace SchleifenÜbungA5
     {
         static void Main(string[] args)
         {
-            double variable = 0;
-            int auswahl = 0;
+
+
+            int auswahl = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Wählen Sie eine Positive Zahl(1) oder eine negative Zahl(2)");
             Console.ReadLine();
 
-
-            if (auswahl == 1) ;
-            do
-            {
-                variable = variable + 1;
-                Console.Write(variable);
             
-            } while (variable < 0) ;
+            
 
+            if (auswahl == 1) 
+            for (int i = 0; i >= 0; i++) 
+            {
+                    Console.Write(i);    
+            }
 
-              if (auswahl == 2) ;
-              do
-              {
-                variable = variable - 1;
-                Console.Write(variable);
-              } while (variable > 0);
-
+            if(auswahl==2)
+            for(int i = 0; i<=0; i--)
+                {
+                    Console.Write(i); 
+                }
         }
     }
 }
