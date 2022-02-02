@@ -8,15 +8,14 @@ namespace SchleifenÜbungen6
         {
 
 
-            int ende = 0;
-            Console.WriteLine("Bitte geben Sie eine 0 ein, um das Programm zu beenden.");
-            Console.ReadLine();
+            int ende = 1;
+
 
             do
             {
 
                 Console.WriteLine("Sie sollen eine 0 eingeben, um das Programm zu verlassen!");
-                Console.ReadLine();
+                ende= Convert.ToInt32(Console.ReadLine());
 
             } while (ende != 0);
 
