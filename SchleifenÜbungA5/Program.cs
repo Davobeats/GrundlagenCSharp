@@ -7,17 +7,18 @@ namespace SchleifenÜbungA5
         static void Main(string[] args)
         {
 
-            int i = 0, n = i * -1;
+            Console.WriteLine("Geben Sie bitte eine Zahl ein:");
 
-            Console.WriteLine("Geben Sie bitte eine Ziffer ein!");
-            for (i = Convert.ToInt32(Console.ReadLine()); n<=i;n=n+2) 
+            decimal x = Convert.ToDecimal(Console.ReadLine());
+            decimal i = -x;
+
+            while(i<=x)
             {
-
-                Console.Write(n);
-                Console.Write(" ");
-
+                Console.Write(i+", ");
+                i += 2;
             }
-           
+               
+
 
 
         }
