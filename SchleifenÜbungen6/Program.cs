@@ -7,10 +7,8 @@ namespace SchleifenÜbungen6
         static void Main(string[] args)
         {
 
-            bool ende = false;
 
-            
-
+            int ende = 0;
             Console.WriteLine("Bitte geben Sie eine 0 ein, um das Programm zu beenden.");
             Console.ReadLine();
 
@@ -18,12 +16,9 @@ namespace SchleifenÜbungen6
             {
 
                 Console.WriteLine("Sie sollen eine 0 eingeben, um das Programm zu verlassen!");
-                ende = true;
-            } while (!ende);
-            if (ende)
-            
-                Environment.Exit(0);
-            
+                Console.ReadLine();
+
+            } while (ende != 0);
 
 
         }
