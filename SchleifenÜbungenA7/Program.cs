@@ -7,16 +7,17 @@ namespace SchleifenÜbungenA7
         static void Main(string[] args)
         {
 
+            Console.WriteLine("Bitte geben Sie eine Zahl ein:");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int zahl = 0;
 
-            int n = 100, sum = 0;
-            n = Convert.ToInt32(Console.ReadLine());
-            for(int i = 0;i<=n; i++)
+            for (int i = 0; i <= n; i++) 
             {
-                sum = sum + 1;
+
+                zahl = zahl + i;
+                Console.WriteLine(zahl);
+
             }
-            Console.WriteLine(sum);
-
-
 
 
 
