@@ -6,26 +6,30 @@ namespace DatenfelderARRAY_Übung
     {
         static void Main(string[] args)
         {
-            
-            
-            int[] Note1 = new int[0];
-            int[] Note2 = new int[1];
-            int[] Note3 = new int[2];
-            int[] Note4 = new int[3];
-            int[] Note5 = new int[4];
-            int[] Note6 = new int[5];
 
 
-            Console.WriteLine("Wie viele Kinder haben die Klausur geschrieben?");
-            int eingabe = Convert.ToInt32(Console.ReadLine());
+            int[] Noten = new int[20];
 
-            Console.WriteLine("Wie viele haben eine Eins geschrieben?");
-            Console.ReadLine();
+            int note = 0;
 
-            
-            
+            double Summe = 0;
 
-            
+            for(int i = 0; i<Noten.Length;i++)
+            {
+                Console.WriteLine("Welche Note hat der Schüler?");
+                
+                note = Convert.ToInt32(Console.ReadLine());
+
+                Noten[i] = note;
+
+                Summe = Summe + note;
+            }
+
+            foreach (int i in Noten) 
+            {
+                Console.WriteLine(Noten[i]);
+            }
+            Console.WriteLine($"Der Notendurschnitt ist: {Summe/20:F2}");
 
 
 
