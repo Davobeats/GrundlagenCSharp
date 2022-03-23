@@ -6,24 +6,26 @@ namespace MethodenÜbung1
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Geben Sie etwas ein:");
+            Console.WriteLine("Geben Sie ein wie oft es ausgegeben werden soll:");
             double anzahl = Convert.ToDouble(Console.ReadLine());
-            anzahl = ausgabeTextMalX(anzahl);
+            Console.WriteLine("Geben Sie Irgendwas ein:");
+            string name = Convert.ToString(Console.ReadLine());
+            anzahl = ausgabeTextMalX(anzahl,name);
+
+            
             Console.WriteLine("\nAnzahl der Buchstaben: {0}", anzahl);
         }
         
-        static double ausgabeTextMalX(double anzahl)
+        static double ausgabeTextMalX(double durchlauf,string name)
         {
-            string name = "";
-            Console.WriteLine("Was ist ihr Name?");
-            name = Convert.ToString(Console.ReadLine());
-            for(double i = anzahl; i<=anzahl; i++)
+            int anz_zeichen = name.Length;
+            double anz_aller_zeichen = anz_zeichen * durchlauf;
+            for (int i = 0; i<=anz_zeichen;i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(name);
             }
-            
-            return anzahl;
+
+            return anz_aller_zeichen;
         }
 
         
