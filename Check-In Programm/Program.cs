@@ -28,7 +28,7 @@ namespace Check_In_Programm
                 zimmernummer = Zimmer_Checkin(zimmernummer);
             }
 
-            Console.WriteLine("Okay, {0} Willkommen.",nachname);
+            Console.WriteLine("Okay, {0} Willkommen.");
         }
 
         static string[] Name_Checkin (string[] naname)
@@ -41,7 +41,7 @@ namespace Check_In_Programm
         static short[] Zimmer_Checkin (short[] zimmer)
         {
             short[] zimmer_nummer = zimmer;
-            
+
             return zimmer;
         }
 
