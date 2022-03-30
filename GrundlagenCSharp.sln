@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mehrdimensionale Arrays Üb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortierAlgorhytmus Arrays", "SortierAlgorhytmus Arrays\SortierAlgorhytmus Arrays.csproj", "{1BEFE327-D169-4CB4-BA98-5A2A4CDD28E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodenÜbung1", "MethodenÜbung1\MethodenÜbung1.csproj", "{05A28302-67DE-4CDA-870E-D1172040F25D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodenÜbung1", "MethodenÜbung1\MethodenÜbung1.csproj", "{05A28302-67DE-4CDA-870E-D1172040F25D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Check-In Programm", "Check-In Programm\Check-In Programm.csproj", "{AA9D6486-87B1-45C1-BC41-62BB36939D14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{05A28302-67DE-4CDA-870E-D1172040F25D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05A28302-67DE-4CDA-870E-D1172040F25D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05A28302-67DE-4CDA-870E-D1172040F25D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9D6486-87B1-45C1-BC41-62BB36939D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9D6486-87B1-45C1-BC41-62BB36939D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9D6486-87B1-45C1-BC41-62BB36939D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9D6486-87B1-45C1-BC41-62BB36939D14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
