@@ -11,39 +11,69 @@ namespace Check_In_Programm
             string[] vorname = { "John", "Paul", "George", "Ringo" };
             string[] nachname = { "Lennon", "McCartney", "Harrison", "Starr" };
             short[] übernachtungen = { 1, 4, 12, 3 };
-            double[] rechnungsbetrag = {82.46 ,329.84, 989.52, 247.38};
+            double[] rechnungsbetrag = { 82.46, 329.84, 989.52, 247.38 };
 
-            Console.WriteLine("Hallo. Möchten Sie über Ihren Nachnamen(1) oder Zimmernummer einchecken?(2)");
-            short eingabe = Convert.ToInt16(Console.ReadLine());
 
-            if (eingabe == 1)
+            Console.WriteLine("Hallo. Wenn Sie mit Ihrem Nachnamen einchecken wollen, schreiben Sie irgendeinen Buchstaben.\n" +
+            "Wenn Sie mit Ihrer Zimmernummer einchecken wollen, geben Sie irgendeine Zahl ein.\n" +
+            "Sie werden weitergeleitet.");
+            string eingabe_string = Console.ReadLine();
+
+            short eingabe_short;
+            var data = (true, 0,"", "", 0, 0.0);
+
+
+            bool flag = short.TryParse(eingabe_string,out eingabe_short);
+
+            switch (flag)
             {
-                Console.WriteLine("Okay, Sie möchten mit Ihrem Nachnamen einchecken.");
-                nachname = Name_Checkin(nachname);
+                case false:
+                    data = GetData(eingabe_string, zimmernummer, vorname, nachname, übernachtungen, rechnungsbetrag);
+                    break;
+
+                case true:
+
+                    data = GetData(eingabe_short,zimmernummer,vorname,nachname,übernachtungen,rechnungsbetrag);
+                    break;
             }
 
-            if (eingabe == 2)
+            Console.WriteLine("Okay, {0}. Willkommen. Ihr Zimmer ist Nummer: {1}!",nachname,zimmernummer);
+
+        }
+
+
+        static (bool, short, string, string, short, double) GetData(short diff, short[] zn, string[] vn, string[] nn, short[] ue, double[] rb)
+        {
+
+            Console.WriteLine("Sie haben eine Zahl eingegeben und checken dadurch mit Ihrer Zimmernummer ein.\n" +
+            "Welche Zimmernummer haben Sie?");
+            short Zinum = Convert.ToInt16(Console.ReadLine());
+            for (short i = 0; i <= Zinum; i++)
             {
-                Console.WriteLine("Okay, Sie möchten mit Ihrer Zimmernummer einchecken.");
-                zimmernummer = Zimmer_Checkin(zimmernummer);
+                Console.WriteLine(zn);
+            }
+           
+            int index = 0;
+
+            return (true,zn[index],"","",4,8.0);
+        }
+
+        static (bool, short, string, string, short, double) GetData(string diff, short[] zn, string[] vn, string[] nn, short[] ue, double[] rb)
+        {
+            Console.WriteLine("Sie haben einen Buchstaben eingegeben und checken dadurch mit Ihrem Nachnamen ein.\n" +
+            "Welchen Namen haben Sie?");
+            short nam = Convert.ToInt16(Console.ReadLine());
+            for (short i = 0; i <= nam; i++)
+            {
+                Console.WriteLine(zn);
             }
 
-            Console.WriteLine("Okay, {0} Willkommen.");
+
+
+            int index = 0;
+            return (true, zn[index], "", "", 4, 8.0);
         }
 
-        static string[] Name_Checkin (string[] naname)
-        {
-            string[] ganz_name = naname;
-
-            return naname;
-        }
-
-        static short[] Zimmer_Checkin (short[] zimmer)
-        {
-            short[] zimmer_nummer = zimmer;
-
-            return zimmer;
-        }
 
 
     }
