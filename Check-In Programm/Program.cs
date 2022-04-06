@@ -34,7 +34,7 @@ namespace Check_In_Programm
                 case true:
 
                     data = GetData(eingabe_short,zimmernummer,vorname,nachname,übernachtungen,rechnungsbetrag);
-                    break;
+                    break; 
             }
 
             Console.WriteLine("Okay, {0}. Willkommen. Ihr Zimmer ist Nummer: {1}!",nachname,zimmernummer);
@@ -44,17 +44,19 @@ namespace Check_In_Programm
 
         static (bool, short, string, string, short, double) GetData(short diff, short[] zn, string[] vn, string[] nn, short[] ue, double[] rb)
         {
-
             Console.WriteLine("Sie haben eine Zahl eingegeben und checken dadurch mit Ihrer Zimmernummer ein.\n" +
             "Welche Zimmernummer haben Sie?");
             short Zinum = Convert.ToInt16(Console.ReadLine());
-            for (short i = 0; i <= Zinum; i++)
+            short index = 0;
+            for (short i = 0; i < zn.Length; i++)
             {
-                Console.WriteLine(zn);
+                Zinum = i;
+                if (diff == zn[i])
+                {
+                    index = i;
+                }
             }
-           
-            int index = 0;
-
+            
             return (true,zn[index],"","",4,8.0);
         }
 
@@ -62,19 +64,18 @@ namespace Check_In_Programm
         {
             Console.WriteLine("Sie haben einen Buchstaben eingegeben und checken dadurch mit Ihrem Nachnamen ein.\n" +
             "Welchen Namen haben Sie?");
-            short nam = Convert.ToInt16(Console.ReadLine());
-            for (short i = 0; i <= nam; i++)
+            short name = Convert.ToInt16(Console.ReadLine());
+            short index = 0;
+            for (short i = 0; i < zn.Length; i++)
             {
-                Console.WriteLine(zn);
+                name = i;
+                if (diff == nn[i])
+                {
+                    index = i;
+                }
             }
 
-
-
-            int index = 0;
             return (true, zn[index], "", "", 4, 8.0);
         }
-
-
-
     }
 }
