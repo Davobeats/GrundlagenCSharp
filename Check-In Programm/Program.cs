@@ -37,7 +37,7 @@ namespace Check_In_Programm
                     break; 
             }
 
-            Console.WriteLine("Okay, {0}. Willkommen. Ihr Zimmer ist Nummer: {1}!",nachname,zimmernummer);
+            Console.WriteLine($"Okay, {0}. Willkommen. Ihr Zimmer ist Nummer: {1}!",nachname,zimmernummer);
 
         }
 
@@ -57,7 +57,7 @@ namespace Check_In_Programm
                 }
             }
             
-            return (true,zn[index],"","",4,8.0);
+            return (true,zn[index], "", "", 4,8.0);
         }
 
         static (bool, short, string, string, short, double) GetData(string diff, short[] zn, string[] vn, string[] nn, short[] ue, double[] rb)
